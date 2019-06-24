@@ -1,2 +1,2 @@
 # KB_Literal_Canonicalization
-Codes and data for the ISWC'19 paper "Canonicalizing Knowledge Base Literals"
+Codes and data for out studies on "Knowledge Graph Curation with Deep Learning and Semantic Reasoning".
