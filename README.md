@@ -1,4 +1,4 @@
-# KB_Literal_Canonicalization
+# Knowledge Base Curation
 Codes and data for out studies on "Knowledge Graph Curation with Deep Learning and Semantic Reasoning".
 
 ## References
