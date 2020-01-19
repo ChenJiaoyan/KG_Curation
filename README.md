@@ -3,4 +3,6 @@ Codes and data for out studies on "Knowledge Graph Curation with Deep Learning a
 
 ## References
 
-- Jiaoyan Chen, Ernesto Jimenez-Ruiz, Ian Horrocks. **Canonicalizing Knowledge Base Literals**. Accepted for publication in International Semantic Web Conference (ISWC), 2019. 
+- Jiaoyan Chen, Ernesto Jimenez-Ruiz, Ian Horrocks. **Canonicalizing Knowledge Base Literals**. International Semantic Web Conference (ISWC), 2019. 
+
+- Jiaoyan Chen, Xi Chen, Ian Horrocks, Ernesto Jimenez-Ruiz, Erik B. Myklebus. **Correcting Knowledge Base Assertions**. Accepted by The Web Conference (WWW), 2020.
