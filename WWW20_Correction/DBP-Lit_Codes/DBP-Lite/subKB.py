@@ -12,7 +12,7 @@ from Lib.util_kb import Query_Objects, Query_Subjects, Query_Subject_Triples, Qu
 
 parser = argparse.ArgumentParser()
 current_path = os.path.dirname(os.path.realpath(sys.argv[0]))
-parser.add_argument('--data_file', type=str, default=os.path.join(current_path, 'Data/Annotate.csv'))
+parser.add_argument('--data_file', type=str, default=os.path.join(current_path, 'Data/RData_Annotate.csv'))
 parser.add_argument('--lookup_cache_file', type=str, default=os.path.join(current_path, 'Data/Lookup_Cache_Split30.json'))
 parser.add_argument('--PTriple_cache_file', type=str, default=os.path.join(current_path, 'Data/PTriple_Cache.json'))
 parser.add_argument('--PObject_cache_file', type=str, default=os.path.join(current_path, 'Data/PObject_Cache.json'))

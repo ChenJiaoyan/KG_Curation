@@ -12,7 +12,7 @@
 #                   low triple score/rank (predicted)
 #                   or semantic inconsistency (property constraints)
 #               it evaluates lookup + filtering with link prediction and semantic consistency
-#       "empty rate"
+#       "elimination rate"
 
 
 import os
@@ -24,11 +24,11 @@ import numpy as np
 
 current_path = os.path.dirname(os.path.realpath(sys.argv[0]))
 parser = argparse.ArgumentParser()
-parser.add_argument('--data_file', type=str, default=os.path.join(current_path, 'Data/Annotate.csv'))
-parser.add_argument('--redirect_cache_file', type=str, default=os.path.join(current_path, 'Data/Redirect_Cache.json'))
-parser.add_argument('--lookup_cache_file', type=str, default=os.path.join(current_path, 'Data/Lookup_Cache_Split30.json'))
-parser.add_argument('--prediction_file', type=str, default=os.path.join(current_path, 'Data/Predicts_NodePathConstraint.csv'))
-parser.add_argument('--evaluate_type', type=str, default='overall', help='link_prediction, overall')
+parser.add_argument('--data_file', type=str, default=os.path.join(current_path, 'RData/RData_Annotate.csv'))
+parser.add_argument('--redirect_cache_file', type=str, default=os.path.join(current_path, 'RData/Redirect_Cache.json'))
+parser.add_argument('--lookup_cache_file', type=str, default=os.path.join(current_path, 'RData/Lookup_Cache_Split30.json'))
+parser.add_argument('--prediction_file', type=str, default=os.path.join(current_path, 'RData/Predicts_TransH.csv'))
+parser.add_argument('--evaluate_type', type=str, default='link_prediction', help='link_prediction, overall')
 parser.add_argument('--threshold_step', type=float, default=0.05)
 parser.add_argument('--lookup_entity_mask_topk', type=int, default=30)
 FLAGS, unparsed = parser.parse_known_args()

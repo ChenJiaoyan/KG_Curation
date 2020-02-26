@@ -8,7 +8,7 @@ import argparse
 
 current_path = os.path.dirname(os.path.realpath(sys.argv[0]))
 parser = argparse.ArgumentParser()
-parser.add_argument('--data_file', type=str, default=os.path.join(current_path, 'Data/Annotate.csv'))
+parser.add_argument('--data_file', type=str, default=os.path.join(current_path, 'Data/RData_Annotate.csv'))
 parser.add_argument('--redirect_cache_file', type=str, default=os.path.join(current_path, 'Data/Redirect_Cache.json'))
 parser.add_argument('--related_entity_file', type=str, default=os.path.join(current_path, 'Data/Lookup_Cache_Raw50.json'))
 parser.add_argument('--max_k', type=int, default=30)
