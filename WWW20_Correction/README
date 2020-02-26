@@ -1,0 +1,49 @@
+Here is the introduction to the codes for correcting assertions for DBP-Lit.
+
+1. cache.py (cache entities and assertions from DBpedia), including
+    1.1 entities by lookup (get top-K entities by Loopup*)
+    1.2 associated triples of each property
+    1.3 associated objects of each property
+    1.4 wikipage redirected entities
+    1.5 classes of each entity
+    1.6 ancestors of each class
+
+2. cache_word2vec.py (get top-K entities according to word2vec)
+
+3. subKB.py (build the sub-KB according to the cache by cache.py, cf. Data/G_entities.csv, Data/G_properties.csv, Data/G_triples.csv)
+
+4. RDF2Vec.py (get entity embeddings, downloaded from http://data.dws.informatik.uni-mannheim.de/rdf2vec/models/DBpedia/2016-04/GlobalVectors/)
+
+5. graph_feature.py (extract observed features)
+    5.1 node feature
+    5.2 path feature
+
+6. predict.py
+    6.1 sampling
+    6.2 train and predict with labels + AttBiRNN
+    6.3 train and predict with observed features
+    6.4 train and predict with RDF2Vec
+
+7. predict_embedding.py
+    7.1 set sampling=True: extract OpenKE samples, the output is saved in OpenKE/benchmarks/; 
+    6.1 set sampling=False: predict with semantic embeddings (support TransE and DistMult; support external external embeddings by OpenKE or others)
+
+8. OpenKE/train_xx.py & predict_openke.py
+    8.1 train and predict with openKE (run ./bash.sh in advance); the output is saved in DBP-Lite/Data
+
+9. constraint_mining.py (mine property constraints)
+    9.1 cardinality constraint (cf. Data/Constraint_Cardinality.txt)
+    9.2 range constraint (cf. Data/Constraint_ConRange.txt, Data/Constraint_GenRange.txt)
+
+10. validate_constraint.py
+    10.1 consistency checking by property cardinality
+    10.2 consistency checking by property range
+    10.3 merge of two consistency checking scores or consistency checking score and predicted score
+
+11 evaluate.py
+    11.1 "overall": correction rate, empty rate and accuracy
+    11.2 "link prediction": MRR, Hits@1, Hits@5
+
+12 evaluate_REE.py (recall of related entity estimation)
+
+
