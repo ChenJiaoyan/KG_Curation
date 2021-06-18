@@ -1,9 +1,0 @@
-RData_Clean.csv: subject, property, literal, manually annotated concrete types without prefix (separated by comma)
-RData_Type.json: key is a triple string composed of subject, property and literal; value is list of DBO types
- 
-SData_Clean.csv: subject, property, literal, corresponding entity
-SData_Type.csv: key is the entity; value is a list of DBO types
-SData_Type_fixed.json: the fixed verion of SData_Type.csv, with Wikidata
-
-property_slit.json: key is the property; value is the split of the property name
-
