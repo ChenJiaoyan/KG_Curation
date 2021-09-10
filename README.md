@@ -7,4 +7,4 @@ Codes and data for out studies on "Knowledge Graph Curation with Deep Learning a
 
 - Jiaoyan Chen, Xi Chen, Ian Horrocks, Ernesto Jimenez-Ruiz, Erik B. Myklebus. **Correcting Knowledge Base Assertions**. Accepted by The Web Conference (WWW), 2020.
 
-- Jiaoyan Chen, Ernesto Jimenez-Ruiz, Ian Horrocks, Xi Chen, Erik B. Myklebus. **Correcting Assertions and Alignments of Large Scale Knowledge Bases**. Under revision, 2021.
+- Jiaoyan Chen, Ernesto Jimenez-Ruiz, Ian Horrocks, Xi Chen, Erik B. Myklebus. **An Assertion and Alignment CorrectionFramework for Large Scale Knowledge Bases**. Semantic Web Journal, 2021, accepted.
